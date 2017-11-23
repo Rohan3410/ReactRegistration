@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-mongoose.connect('mongodb://localhost:27017/react-app',function(error){
+mongoose.connect('mongodb://localhost:27017/react-app || mongodb://heroku_hhwbq0rp:chinu3410@ds119476.mlab.com:19476/heroku_hhwbq0rp',function(error){
     if(error){
      console.error('Please make sure mongodb is installed and running..!');
      throw error;
